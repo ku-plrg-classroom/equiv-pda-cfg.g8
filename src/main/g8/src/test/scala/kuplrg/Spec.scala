@@ -132,7 +132,7 @@ class Spec extends SpecBase {
     (0, Some('b'), Z) -> (0, List(Y, Z)),
     (0, Some('b'), X) -> (0, List()),
     (0, Some('b'), Y) -> (0, List(Y, Y)),
-    (0, None, Z) -> (1, List()),
+    (0, None, Z) -> (1, List(Z)),
   )
 
   // PDA for lang_na_neq_nb by final states
@@ -185,7 +185,7 @@ class Spec extends SpecBase {
     (4, Some('a'), X) -> (5, List(X)),
     (5, Some('a'), X) -> (5, List()),
     (5, Some('b'), X) -> (5, List()),
-    (5, None, Z) -> (6, List()),
+    (5, None, Z) -> (6, List(Z)),
   )
 
   // PDA for lang_not_a2n1_b2n1 by final states
@@ -230,7 +230,7 @@ class Spec extends SpecBase {
     (1, None, Z) -> (2, List(Z)),
     (1, None, X) -> (2, List(X)),
     (2, Some('b'), X) -> (2, List()),
-    (2, None, Z) -> (3, List()),
+    (2, None, Z) -> (3, List(Z)),
   )
 
   // PDA for lang_balanced by final states
@@ -246,7 +246,7 @@ class Spec extends SpecBase {
     (0, Some('{'), Y) -> (0, List(Y, Y)),
     (0, Some(')'), X) -> (0, List()),
     (0, Some('}'), Y) -> (0, List()),
-    (0, None, Z) -> (1, List()),
+    (0, None, Z) -> (1, List(Z)),
   )
 
   // PDA for lang_an_bn by empty stacks
