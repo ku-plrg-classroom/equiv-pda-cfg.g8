@@ -427,7 +427,7 @@ class Spec extends SpecBase {
 
   // A language L = { a^n | n >= 0 }
   val lang_an: Lang = (
-    "ab".toSet,
+    "a".toSet,
     w => w.forall(_ == 'a')
   )
 
